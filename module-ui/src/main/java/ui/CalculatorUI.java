@@ -1,3 +1,5 @@
+package ui;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
@@ -23,7 +25,6 @@ public class CalculatorUI {
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setSize(400,100);
         window.setLocationRelativeTo(null);
-        setBackground();
         window.setLayout(new FlowLayout());
         panel = new JPanel();
 
@@ -65,20 +66,6 @@ public class CalculatorUI {
 
             }
         });
-    }
-
-    private void setBackground() {
-        BufferedImage background = null;
-        try {
-            background = ImageIO.read(new File("module-ui/src/main/resources/background.jpg"));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        JLabel backgroundLabel = new JLabel(new ImageIcon(background.getScaledInstance(400,100, Image.SCALE_SMOOTH)));
-        backgroundLabel.setSize(400,100);
-        backgroundLabel.setLocation(0, 0);
-        window.setLayout(new BorderLayout());
-        window.setContentPane(backgroundLabel);
     }
 
 }

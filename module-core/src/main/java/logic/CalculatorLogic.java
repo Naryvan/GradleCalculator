@@ -1,3 +1,5 @@
+package logic;
+
 import math.MathOperations;
 import ui.CalculatorUI;
 
@@ -67,10 +69,6 @@ public class CalculatorLogic {
         } else if(ui.operation.getSelectedItem().toString().equals("*")) {
             ui.result.setText(String.valueOf(MathOperations.multiply(firstNumber, secondNumber)));
         }
-    }
-
-    public static void main(String[] args) {
-        new CalculatorLogic();
     }
 
 }
