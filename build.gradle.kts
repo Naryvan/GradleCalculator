@@ -26,6 +26,7 @@ abstract class ValidateMain : DefaultTask() {
     @TaskAction
     fun action() {
         val filePath = "src/main/java/org/example/Main.java"
+
         val file = File(filePath)
 
         if (file.exists()) {
@@ -36,4 +37,18 @@ abstract class ValidateMain : DefaultTask() {
     }
 }
 
-tasks.register<ValidateMain>("ValidateMain")
+abstract class SetAppName : DefaultTask() {
+    @Option(option="name", description="set app name")
+    @Input
+    var appName: String = "Calculator"
+
+    @TaskAction
+    fun action() {
+        val filePath = "module-ui/src/main/resources/build_config.txt"
+        val file = File(filePath)
+        file.writeText(appName)
+    }
+}
+
+tasks.register<SetAppName>("setAppName")
+tasks.register<ValidateMain>("validateMain")

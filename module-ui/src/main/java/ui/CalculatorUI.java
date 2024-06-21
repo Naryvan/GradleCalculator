@@ -7,7 +7,9 @@ import javax.swing.event.DocumentListener;
 import javax.swing.text.NumberFormatter;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.text.NumberFormat;
 
@@ -21,7 +23,7 @@ public class CalculatorUI {
     public JTextField result;
 
     public CalculatorUI() {
-        window = new JFrame("Calculator");
+        window = new JFrame(getAppName());
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setSize(400,100);
         window.setLocationRelativeTo(null);
@@ -66,6 +68,19 @@ public class CalculatorUI {
 
             }
         });
+    }
+
+    private String getAppName() {
+        String file ="module-ui/src/main/resources/build_config.txt";
+
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(file));
+            String currentLine = reader.readLine();
+            reader.close();
+            return currentLine;
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }
