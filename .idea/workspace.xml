@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e96b073-b2ab-4d2c-bd7c-5a8cd3c62eca" name="Changes" comment="added a task that checks if Main.java exists">
-      <change afterPath="$PROJECT_DIR$/module-ui/src/main/resources/build_config.txt" afterDir="false" />
+    <list default="true" id="3e96b073-b2ab-4d2c-bd7c-5a8cd3c62eca" name="Changes" comment="added a task that allows changing app name for built project with ./gradlew setAppName --name=Calculator">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestMathOperations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-ui/src/main/java/ui/CalculatorUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-ui/src/main/java/ui/CalculatorUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,33 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GradleCalculator" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,10 +62,15 @@
   "keyToString": {
     "Gradle.GradleCalculator [:Main.main()].executor": "Run",
     "Gradle.GradleCalculator:module-core [:module-core:CalculatorLogic.main()].executor": "Run",
+    "Gradle.TestMathOperations.executor": "Run",
+    "Gradle.TestMathOperations.mathTest.executor": "Run",
+    "Gradle.TestMathOperations.mathTestAddition.executor": "Run",
+    "Gradle.Tests.executor": "Run",
+    "Gradle.Tests.mathTestAddition.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/studying/Нова папка/MavenCalculator",
+    "last_opened_file_path": "E:/studying/Нова папка/GradleCalculator",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,14 +93,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="CalculatorLogic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="logic.CalculatorLogic" />
-      <module name="GradleCalculator.module-core.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.TestMathOperations.mathTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="GradleCalculator.main" />
@@ -83,10 +107,109 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestMathOperations" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TestMathOperations&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestMathOperations.mathTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TestMathOperations.mathTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestMathOperations.mathTestAddition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TestMathOperations.mathTestAddition&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;Tests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestMathOperations.mathTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.CalculatorLogic" />
+        <item itemvalue="Gradle.TestMathOperations.mathTestAddition" />
+        <item itemvalue="Gradle.TestMathOperations" />
+        <item itemvalue="Gradle.Tests" />
       </list>
     </recent_temporary>
   </component>
@@ -107,7 +230,9 @@
       <option name="presentableId" value="Default" />
       <updated>1718986703247</updated>
       <workItem from="1718986704431" duration="2548000" />
-      <workItem from="1718989362218" duration="4029000" />
+      <workItem from="1718989362218" duration="4862000" />
+      <workItem from="1719407774978" duration="1542000" />
+      <workItem from="1719410691701" duration="3511000" />
     </task>
     <task id="LOCAL-00001" summary="added a task that checks if Main.java exists">
       <option name="closed" value="true" />
@@ -117,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718990538651</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added a task that allows changing app name for built project with ./gradlew setAppName --name=Calculator">
+      <option name="closed" value="true" />
+      <created>1718993649475</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718993649475</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +269,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added a task that checks if Main.java exists" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a task that checks if Main.java exists" />
+    <MESSAGE value="added a task that allows changing app name for built project with ./gradlew setAppName --name=Calculator" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a task that allows changing app name for built project with ./gradlew setAppName --name=Calculator" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/TestMathOperations.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
